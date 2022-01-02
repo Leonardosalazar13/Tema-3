@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud sin local storage</title>
+    <link type="text/css" rel="stylesheet" href="CSS.css"
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="Nombre">Nombre</label>
+                        <input id="nombre" type="text" name="nombre" />
+                    </div>
+                    <div>
+                        <label for="Trabajo">Trabajo</label>
+                        <input id="trabajo" type="text" name="trabajo" />
+                    </div>
+                    <div>
+                        <label for="Edad">Edad</label>
+                        <input id="edad" type="number" name="edad" />
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="usuariolist">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Trabajo</th>
+                                <th>Edad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./javascript.js"></script>
+</body>
+</html>
